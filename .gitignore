@@ -1,0 +1,81 @@
+## Environment and secrets
+.env
+.env.*
+!.env.example
+*.local
+
+## Python virtual environments
+.venv/
+venv/
+env/
+ENV/
+*.venv/
+
+## Python caches and build artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.eggs/
+pip-wheel-metadata/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.tox/
+.nox/
+.coverage
+.coverage.*
+htmlcov/
+
+## Data and generated files
+#data/*
+##!data/.gitkeep
+genomic-kg/data/*
+!genomic-kg/data/.gitkeep
+#*.csv
+*.tsv
+*.jsonl
+*.parquet
+*.pkl
+*.pickle
+*.vcf
+*.vcf.gz
+*.bcf
+*.bam
+*.cram
+*.tbi
+
+## Neo4j local files
+neo4j/data/
+neo4j/logs/
+neo4j/import/
+neo4j/plugins/
+
+## Logs and local runtime files
+*.log
+*.tmp
+*.temp
+*.pid
+*.seed
+
+## Editor and operating-system files
+.vscode/
+!.vscode/settings.json
+!.vscode/extensions.json
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+## Local databases and tooling state
+*.db
+*.sqlite
+*.sqlite3
+.cache/
+.local/
